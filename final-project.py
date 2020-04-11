@@ -64,7 +64,7 @@ def save_results_to_file(search_entry, search_type, results):
                 results_to_write += str(result) + "\n"
             text_file.write(results_to_write)
     elif ask_to_save == "n":
-        ask_if_search_again()
+        return
     else:
         print("I'm sorry, I don't recognise what you have entered. Please try again!")
         save_results_to_file()
